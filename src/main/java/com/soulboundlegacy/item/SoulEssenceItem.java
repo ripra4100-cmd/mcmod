@@ -1,0 +1,1 @@
+package com.soulboundlegacy.item;\n\nimport net.minecraft.world.item.Item;\nimport net.minecraft.world.item.ItemStack;\nimport net.minecraft.world.entity.player.Player;\n\npublic class SoulEssenceItem extends Item {\n    public SoulEssenceItem() {\n        super(new Properties()\n                .stacksTo(64));\n    }\n}\n
