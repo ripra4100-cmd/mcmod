@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '[6,)'
+    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'
+}
+
+group = 'com.soulboundlegacy'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+minecraft {
+    version = '1.20.1-47.2.0'
+    mappings channel: 'official', version: '1.20.1'
+    
+    runs {
+        client {
+            workingDirectory project.file('run')
+            mods {
+                soulboundlegacy {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+}
+
+jar {
+    manifest {
+        attributes([
+                'Implementation-Title': 'Soul Bound Legacy',
+                'Implementation-Version': version,
+                'Implementation-Vendor': 'ripra4100-cmd'
+        ])
+    }
+}

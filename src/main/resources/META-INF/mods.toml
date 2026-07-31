@@ -1,0 +1,14 @@
+modLoader="javafxmod"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="soulboundlegacy"
+version="1.0.0"
+displayName="Soul Bound Legacy"
+displayURL="https://github.com/ripra4100-cmd/mcmod"
+logoFile=""
+credits="ripra4100-cmd"
+authors="ripra4100-cmd"
+description="""Sistem Nasljeda i Klasa - RPG mod baziran na klanu
+"""
